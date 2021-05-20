@@ -1,1 +1,7 @@
-# Work Day Scheduler Starter Code
+# Work Day Scheduler 
+
+## Here is a demonstration of the applications functionality
+
+
+
+

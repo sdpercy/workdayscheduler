@@ -9,6 +9,6 @@
 5. To save the entry click the save button for that time block.  The text will be saved to localstorage
 6. WHEN you refresh the page the saved events persist.
 
-Here is the url for the application:
+Here is the url for the application: https://sdpercy.github.io/workdayscheduler/
 
 ![image](https://user-images.githubusercontent.com/78440638/119001843-eaade600-b966-11eb-9455-960586a10ceb.png)

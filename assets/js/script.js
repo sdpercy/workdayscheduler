@@ -1,9 +1,9 @@
     //displays current date and time
 $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
-//load the html and css files
+
 
     storeLocal();
-
+//retrieve localStorage values for todays tasks descriptions
     function storeLocal(){
     $("#hours8, #text8").val(localStorage.getItem("8:00am"));
     $("#hours9, #text9").val(localStorage.getItem("9:00am"));
@@ -17,7 +17,7 @@ $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
     $("#hours17, #text17").val(localStorage.getItem("5:00pm"));
 }
    
-
+//when button submit button is clicked for a given time it stores the values in localStorage
 $("#btn8").click(function() {
         var time = document.getElementById("hour8").innerText;
         var descriptionText = document.getElementById("text8").value;
@@ -69,7 +69,7 @@ $("#btn8").click(function() {
         var descriptionText = document.getElementById("text17").value;
         localStorage.setItem(time, descriptionText);
     });
-    
+
     function logHours(){
         //retrieve the current hour from moment.js
         var currentTime = moment().hour();

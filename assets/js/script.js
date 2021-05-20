@@ -16,7 +16,9 @@ $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
     $("#hours16, #text16").val(localStorage.getItem("4:00pm"));
     $("#hours17, #text17").val(localStorage.getItem("5:00pm"));
 }
-    $("#btn8").click(function() {
+   
+
+$("#btn8").click(function() {
         var time = document.getElementById("hour8").innerText;
         var descriptionText = document.getElementById("text8").value;
         localStorage.setItem(time, descriptionText);
@@ -67,6 +69,7 @@ $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
         var descriptionText = document.getElementById("text17").value;
         localStorage.setItem(time, descriptionText);
     });
+    
     function logHours(){
         //retrieve the current hour from moment.js
         var currentTime = moment().hour();
